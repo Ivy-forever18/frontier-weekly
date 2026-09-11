@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "url": "https://openai.com/index/introducing-the-agents-api",
+    "title": "Agents API 发布：把云端智能体做成托管服务",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+    "title": "GPT-6 Astra 发布：面向工作场景的下一代模型",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.11801v1",
+    "title": "Looped Flows：用局部去噪目标训练循环计算模型",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+    "title": "AlphaGenome Atlas：人类基因组每个单字母变异的预测效应图谱",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.11923v1",
+    "title": "GPU-CFR：把博弈编译成静态数据流，反事实遗憾最小化提速 80 倍",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.11737v1",
+    "title": "ORCH：用组织理论编排异构具身智能体集群",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.11677v1",
+    "title": "Ecdysis：把 Agent 运行时框架的训练从“改错”变成“诊断”",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.11877v1",
+    "title": "AssayBench-Loop 与 AssayLoop：让 CRISPR 筛选自己做序贯决策",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.11900v1",
+    "title": "MindTopo：基础模型能在拓扑空间里推理吗？",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.11842v1",
+    "title": "Fiberwise 最优传输：让扩散/流匹配的时间调度“看见”模型误差",
+    "published_at": "2026-09-11T04:46:29.538Z"
+  }
+]
