@@ -3,9 +3,9 @@ import fs from "node:fs/promises";
 const owner=process.env.GITHUB_REPOSITORY?.split("/")[0]||"Ivy-forever18";
 const repo=process.env.GITHUB_REPOSITORY?.split("/")[1]||"frontier-weekly";
 const token=process.env.GITHUB_TOKEN;
-const apiKey=process.env.OPENAI_API_KEY;
-const model=process.env.OPENAI_MODEL;
-if(!apiKey||!model) throw new Error("请配置 OPENAI_API_KEY Secret 与 OPENAI_MODEL Variable");
+const apiKey=process.env.DEEPSEEK_API_KEY;
+const model=process.env.DEEPSEEK_MODEL||"deepseek-v4-flash";
+if(!apiKey) throw new Error("请在 GitHub Actions Secrets 中配置 DEEPSEEK_API_KEY");
 
 const strip=s=>String(s||"").replace(/<!\[CDATA\[|\]\]>/g,"").replace(/<[^>]+>/g," ").replace(/&amp;/g,"&").replace(/\s+/g," ").trim();
 const tag=(xml,name)=>[...xml.matchAll(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`,"gi"))].map(m=>strip(m[1]));
@@ -15,4 +15,4 @@ const candidates=[...await feeds(),...await issues()];const archive=JSON.parse(a
 if(!fresh.length)throw new Error("本周没有新的候选内容");
 const schema={type:"object",additionalProperties:false,required:["issue","weekly_take","articles"],properties:{issue:{type:"string"},weekly_take:{type:"string"},articles:{type:"array",maxItems:10,items:{type:"object",additionalProperties:false,required:["type","source","title","summary","reader_gain","read_time","url","score"],properties:{type:{type:"string"},source:{type:"string"},title:{type:"string"},summary:{type:"string"},reader_gain:{type:"string"},read_time:{type:"string"},url:{type:"string"},score:{type:"number"}}}}}};
 const prompt=`你是“前沿周刊”的中文主编。从候选中最多选择10篇真正值得读的AI、CS、Agent内容。先按主题/事件做语义去重，同一事件优先原始来源。评分：信息增量25、相关性20、实用价值20、可信度15、可读性10、时效10；软文、标题党、无来源转载扣分。标题要有获得感但不可夸张；summary说明发生什么和为什么重要；reader_gain用一句话说明读者具体得到什么。候选：${JSON.stringify(fresh).slice(0,120000)}`;
-const response=await fetch("https://api.openai.com/v1/responses",{method:"POST",headers:{authorization:`Bearer ${apiKey}`,"content-type":"application/json"},body:JSON.stringify({model,input:prompt,text:{format:{type:"json_schema",name:"weekly_digest",strict:true,schema}}})});if(!response.ok)throw new Error(`OpenAI: ${response.status} ${await response.text()}`);const raw=await response.json();const text=raw.output?.flatMap(x=>x.content||[]).find(x=>x.type==="output_text")?.text;if(!text)throw new Error("OpenAI 未返回结构化结果");const digest=JSON.parse(text);await fs.writeFile("docs/data/latest.json",JSON.stringify(digest,null,2)+"\n");archive.push(...digest.articles.map(x=>({url:x.url,title:x.title,published_at:new Date().toISOString()})));await fs.writeFile("data/archive.json",JSON.stringify(archive.slice(-1000),null,2)+"\n");
+const response=await fetch("https://api.deepseek.com/responses",{method:"POST",headers:{authorization:`Bearer ${apiKey}`,"content-type":"application/json"},body:JSON.stringify({model,input:prompt,max_output_tokens:12000,text:{format:{type:"json_schema",name:"weekly_digest",schema}}})});if(!response.ok)throw new Error(`DeepSeek: ${response.status} ${await response.text()}`);const raw=await response.json();const text=raw.output?.flatMap(x=>x.content||[]).find(x=>x.type==="output_text")?.text;if(!text)throw new Error("DeepSeek 未返回结构化结果");const digest=JSON.parse(text);await fs.writeFile("docs/data/latest.json",JSON.stringify(digest,null,2)+"\n");archive.push(...digest.articles.map(x=>({url:x.url,title:x.title,published_at:new Date().toISOString()})));await fs.writeFile("data/archive.json",JSON.stringify(archive.slice(-1000),null,2)+"\n");

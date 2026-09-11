@@ -17,8 +17,8 @@ jobs:
       - name: AI 获取、去重与筛选
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
         run: node scripts/weekly.mjs
       - name: 提交新一期
         run: |

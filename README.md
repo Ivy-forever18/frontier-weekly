@@ -8,7 +8,7 @@
 
 1. `scripts/weekly.mjs` 从 `data/sources.json` 中配置的 RSS / Atom 信源获取新内容。
 2. 网页上的「投递一篇」会创建带有 `candidate` 标签的 GitHub Issue，适合提交公众号文章。
-3. GitHub Actions 每周一运行，通过 OpenAI Responses API 进行跨来源去重、评分和中文编辑。
+3. GitHub Actions 每周一运行，通过 DeepSeek Responses API 进行跨来源去重、评分和中文编辑。
 4. AI 结果写入 `docs/data/latest.json`，随后 GitHub Pages 自动发布。
 5. `data/archive.json` 保存历史入选链接，用于跨周去重。
 
@@ -18,12 +18,13 @@ AI 只负责形成候选和编辑稿。正式使用时，推荐将定时任务�
 
 在仓库中打开 **Settings → Pages**，将 **Source** 设为 **GitHub Actions**。推送到 `main` 后，`发布 GitHub Pages` 工作流会发布 `docs/`。
 
-## 配置 AI
+## 配置 DeepSeek
 
 打开 **Settings → Secrets and variables → Actions**：
 
-- 在 **Secrets** 中创建 `OPENAI_API_KEY`。不要把密钥写进代码或网页。
-- 在 **Variables** 中创建 `OPENAI_MODEL`，填写你的 OpenAI 项目当前可用、支持 Structured Outputs 的模型 ID。
+- 前往 [DeepSeek 开放平台](https://platform.deepseek.com/) 创建 API Key。
+- 在 **Secrets** 中创建 `DEEPSEEK_API_KEY`。不要把密钥写进代码或网页。
+- 可选：在 **Variables** 中创建 `DEEPSEEK_MODEL`。不填写时默认使用 `deepseek-v4-flash`；需要更强筛选能力时可以填写 `deepseek-v4-pro`。
 
 然后进入 **Actions → 生成本周精选 → Run workflow**，即可手动生成一期。工作流默认也会在每周一北京时间 09:00 运行。
 
