@@ -6,8 +6,8 @@
 
 ## 它如何工作
 
-1. `scripts/weekly.mjs` 从 `data/sources.json` 中配置的 RSS / Atom 信源获取新内容。
-2. 网页上的「投递一篇」会创建带有 `candidate` 标签的 GitHub Issue，适合提交公众号文章。
+1. `scripts/weekly.mjs` 从 `data/sources.json` 中配置的 RSS / Atom 信源获取最近 7 天的新内容。
+2. 网页上的「投递一篇」会创建 GitHub Issue，适合提交公众号文章。
 3. GitHub Actions 每周一运行，通过 DeepSeek Responses API 进行跨来源去重、评分和中文编辑。
 4. AI 结果写入 `docs/data/latest.json`，随后 GitHub Pages 自动发布。
 5. `data/archive.json` 保存历史入选链接，用于跨周去重。
