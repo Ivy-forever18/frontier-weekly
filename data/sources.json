@@ -1,0 +1,5 @@
+[
+  {"name":"arXiv · AI","url":"https://export.arxiv.org/api/query?search_query=cat:cs.AI&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending","type":"论文","enabled":true},
+  {"name":"OpenAI News","url":"https://openai.com/news/rss.xml","type":"产品","enabled":true},
+  {"name":"Google DeepMind","url":"https://deepmind.google/blog/rss.xml","type":"研究","enabled":true}
+]

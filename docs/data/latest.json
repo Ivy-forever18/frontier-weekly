@@ -1,0 +1,16 @@
+{
+  "issue": "VOL. 001 · 本周精选",
+  "weekly_take": "Agent 的竞争，正在从“谁更聪明”转向“谁能更稳定地把事做完”。",
+  "articles": [
+    {"type":"论文","source":"Anthropic Research","title":"Agent 的长程规划，正在从“想更多”转向“记得更好”","summary":"上下文越来越长，但真正该留下的只有决策。新的记忆压缩方法，正在改变 Agent 完成长任务的方式。","reader_gain":"搞懂 Agent Memory 的核心矛盾","read_time":"8 分钟","url":"#"},
+    {"type":"产品","source":"OpenAI","title":"Computer Use 进入真实工作流：这次不只是演示","summary":"跨应用协作终于有了生产化的样子。真正的胜负手，是可靠性、权限边界与随时可接管。","reader_gain":"判断一个 Agent 能不能真的干活","read_time":"6 分钟","url":"#"},
+    {"type":"工程实践","source":"腾讯技术工程","title":"多 Agent 从 Demo 到生产，最容易踩的三个坑","summary":"任务调度、过程观测、结果评测——一线团队把最费钱的教训摊开讲了。","reader_gain":"少走一次昂贵的工程弯路","read_time":"12 分钟","url":"#"},
+    {"type":"公众号","source":"机器之心","title":"7 篇新论文，把本周 AI 研究脉络串起来","summary":"推理、具身智能、世界模型与高效训练。不必逐篇啃，先用一篇建立全局坐标。","reader_gain":"20 分钟补齐一周研究进展","read_time":"10 分钟","url":"#"},
+    {"type":"开源","source":"字节 · Seed","title":"视觉语言模型推理，又轻了一大截","summary":"端侧也能跑、批量更划算。比起参数规模，这次的吞吐提升更值得开发者关注。","reader_gain":"找到 VLM 落地的新选择","read_time":"5 分钟","url":"#"},
+    {"type":"会议","source":"NeurIPS","title":"准备投 NeurIPS？今年这几个变化别错过","summary":"重要日期、主题变化、准备清单一次讲清。越早知道，越少在截止日前通宵。","reader_gain":"拿走一份可执行投稿清单","read_time":"4 分钟","url":"#"},
+    {"type":"论文","source":"Google DeepMind","title":"机器人如何“预见”下一步：世界模型的新答案","summary":"先在脑中模拟，再真的动手。视觉预测与动作规划结合后，陌生场景也不再完全陌生。","reader_gain":"看懂 World Model 为什么又火了","read_time":"9 分钟","url":"#"},
+    {"type":"工程实践","source":"美团技术团队","title":"别再只看准确率：大模型评测正在换尺子","summary":"线上质量、成本与安全必须一起算。复杂业务里的模型评测，比排行榜现实得多。","reader_gain":"搭出更靠谱的评测框架","read_time":"11 分钟","url":"#"},
+    {"type":"公众号","source":"梯度不陡","title":"Prompt 不够用了，现在更重要的是上下文工程","summary":"好 Agent 不是一句神奇指令，而是把正确的信息在正确的时机送进去。","reader_gain":"升级你的 Agent 构建思路","read_time":"7 分钟","url":"#"},
+    {"type":"新闻","source":"MIT Technology Review","title":"穿过发布会噪音，本周真正改变行业的三件事","summary":"不聊热搜和融资数字，只看能力、成本与应用边界发生了什么实质变化。","reader_gain":"建立自己的 AI 趋势判断","read_time":"6 分钟","url":"#"}
+  ]
+}

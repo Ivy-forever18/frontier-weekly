@@ -1,0 +1,27 @@
+name: 投递一篇好内容
+description: 推荐公众号、论文、技术博客或重要新闻
+title: "[投稿] "
+labels: ["candidate"]
+body:
+  - type: markdown
+    attributes:
+      value: "谢谢推荐。相同链接会自动去重，每周最终只选 10 篇。"
+  - type: input
+    id: url
+    attributes:
+      label: 文章链接
+      placeholder: https://mp.weixin.qq.com/s/...
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 来源或公众号
+      placeholder: 腾讯技术工程
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 为什么值得读
+      placeholder: 一句话告诉我们，它带来了什么新认知或实际帮助
