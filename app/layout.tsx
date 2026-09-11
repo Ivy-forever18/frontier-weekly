@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "前沿周刊｜一周 AI 精选",
     description: "过滤噪音，只读重要进展。",
-    images: [{ url: "/og.png", width: 1200, height: 630 }],
+    images: [{ url: "/og-v2.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "前沿周刊｜一周 AI 精选",
     description: "过滤噪音，只读重要进展。",
-    images: ["/og.png"],
+    images: ["/og-v2.png"],
   },
 };
 
