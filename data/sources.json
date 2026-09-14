@@ -1,5 +1,11 @@
 [
-  {"name":"arXiv · AI","url":"https://export.arxiv.org/api/query?search_query=cat:cs.AI&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending","type":"论文","enabled":true},
+  {"name":"TechCrunch · AI","url":"https://techcrunch.com/category/artificial-intelligence/feed/","type":"行业","enabled":true},
   {"name":"OpenAI News","url":"https://openai.com/news/rss.xml","type":"产品","enabled":true},
-  {"name":"Google DeepMind","url":"https://deepmind.google/blog/rss.xml","type":"研究","enabled":true}
+  {"name":"Google DeepMind","url":"https://deepmind.google/blog/rss.xml","type":"企业","enabled":true},
+  {"name":"AWS Machine Learning","url":"https://aws.amazon.com/blogs/machine-learning/feed/","type":"落地","enabled":true},
+  {"name":"AWS News","url":"https://aws.amazon.com/blogs/aws/feed/","type":"企业","enabled":true},
+  {"name":"NVIDIA Developer","url":"https://developer.nvidia.com/blog/feed/","type":"工程","enabled":true},
+  {"name":"NVIDIA Blog","url":"https://blogs.nvidia.com/feed/","type":"企业","enabled":true},
+  {"name":"Ars Technica · AI","url":"https://arstechnica.com/ai/feed/","type":"行业","enabled":true},
+  {"name":"arXiv · AI","url":"https://export.arxiv.org/api/query?search_query=cat:cs.AI&start=0&max_results=12&sortBy=submittedDate&sortOrder=descending","type":"论文","enabled":true}
 ]

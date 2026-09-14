@@ -4,6 +4,9 @@ on:
     branches: [main]
     paths: ["docs/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["生成本周精选"]
+    types: [completed]
 permissions:
   contents: read
   pages: write
@@ -13,6 +16,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
