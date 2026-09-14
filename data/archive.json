@@ -48,5 +48,55 @@
     "url": "https://arxiv.org/abs/2609.11842v1",
     "title": "Fiberwise 最优传输：让扩散/流匹配的时间调度“看见”模型误差",
     "published_at": "2026-09-11T04:46:29.538Z"
+  },
+  {
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+    "title": "把在线存储扩展到 10 亿 ChatGPT 用户：Habitat 的演进复盘",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "title": "GPT-Live-1 上线 API：全双工语音对话开放给开发者",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/navier-stokes-solution",
+    "title": "AI 生成的 Navier–Stokes 千禧年难题解答，并附 Lean 形式化证明",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/codex-quantum-computing-experiments",
+    "title": "MIT 研究者用 GPT-5.6 Sol + Codex 自主跑量子计算实验",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "title": "研究团队用 Codex 与 ChatGPT 从基因组中搜索抗菌分子",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/put-data-to-work",
+    "title": "ChatGPT Work 上线 Data Agent：用自然语言连数据、出看板",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+    "title": "ChatGPT for Financial Services：内置金融数据 + GPT-6 Astra",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "title": "Perplexity 用 GPT-6 Astra 做端到端系统：写沟通、改软件、盯生产",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/1password",
+    "title": "1Password 用 Codex 提升工程效率 21%：安全团队的落地样本",
+    "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/ai-policy-window",
+    "title": "AI 政策窗口正在打开，Chris Lehane 呼吁尽快行动",
+    "published_at": "2026-09-14T05:33:13.012Z"
   }
 ]
