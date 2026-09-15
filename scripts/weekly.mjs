@@ -16,12 +16,24 @@ async function githubRepos(){if(!token)return[];const since=new Date(cutoff).toI
 const candidates=[...await feeds(),...await githubRepos(),...await issues()];const archive=JSON.parse(await fs.readFile("data/archive.json","utf8"));const seen=new Set(archive.map(x=>x.url));const fresh=candidates.filter((x,i,a)=>x.url&&!seen.has(x.url)&&a.findIndex(y=>y.url===x.url)===i);
 console.log(`最近 7 天获取 ${candidates.length} 条，历史与链接去重后剩余 ${fresh.length} 条`);
 if(!fresh.length)throw new Error("本周没有新的候选内容");
+const policyWords=/\b(policy|regulation|regulatory|government|congress|senate|lawmakers|legislation|executive order|white house|election)\b|政策|监管|法规|立法|国会|政府|选举|行政令/i;
+const editorial=fresh.filter(x=>!policyWords.test(`${x.title} ${x.summary}`));
+const bySource=new Map();
+for(const x of editorial){const items=bySource.get(x.source)||[];if(items.length<12){items.push({...x,summary:x.summary.slice(0,450)});bySource.set(x.source,items)}}
+const balanced=[];for(let i=0;i<12;i++)for(const items of bySource.values())if(items[i])balanced.push(items[i]);
+console.log(`排除政策类后 ${editorial.length} 条；按来源均衡后 ${balanced.length} 条，覆盖 ${bySource.size} 个来源`);
+if(!balanced.length)throw new Error("本周没有符合编辑方向的候选内容");
 const schema={type:"object",additionalProperties:false,required:["issue","weekly_take","articles"],properties:{issue:{type:"string"},weekly_take:{type:"string"},articles:{type:"array",maxItems:10,items:{type:"object",additionalProperties:false,required:["type","source","title","summary","reader_gain","career_signal","startup_signal","action","read_time","url","score"],properties:{type:{type:"string"},source:{type:"string"},title:{type:"string"},summary:{type:"string"},reader_gain:{type:"string"},career_signal:{type:"string"},startup_signal:{type:"string"},action:{type:"string"},read_time:{type:"string"},url:{type:"string"},score:{type:"number"}}}}}};
 const prompt=`你是“前沿周刊”的中文主编。它不是论文摘要站，而是一份帮助技术人判断就业方向、创业机会和产业变化的每周商业科技情报。
 
-从候选中严格选择10篇（候选不足时可少于10篇），先按事件语义去重，同一事件优先官方或一手来源。选刊结构尽量满足：企业战略、产品发布与商业化2篇；行业变化、市场、融资或公司动态2篇；Agent、开发工具、开源项目与真实落地2篇；岗位、技能栈或工作方式变化1篇；可转化为创业切口的新需求或新场景1篇；论文最多2篇，且必须有强应用潜力，纯指标改进不选。
+从候选中最多选择10篇（可少于10篇），先按事件语义去重。每个来源最多2篇，同一家企业相关的文章最多2篇；优先让至少5家不同的企业、媒体或开源社区进入一期，不要被OpenAI或任何单一公司主导。同一事件优先官方或一手来源。选刊结构尽量满足：企业战略、产品发布与商业化2篇；行业变化、市场、融资或公司动态2篇；Agent、开发工具、开源项目与真实落地2篇；岗位、技能栈或工作方式变化1篇；可转化为创业切口的新需求或新场景1篇；论文最多2篇，且必须有强应用潜力，纯指标改进不选。完全不要政策、监管、法律、政府倡议、地缘政治、宏观立场类文章。若候选不足，宁可少于10篇，也不要凑数。
 
 优先回答：谁正在付钱、用户行为哪里改变、什么能力开始稀缺、哪些旧流程可被重做、个人本周可以验证什么。降低宏大叙事、模型跑分、重复发布会新闻的权重。评分：决策价值25、信息增量20、产业影响20、可行动性15、可信度10、时效10。软文、标题党、无来源转载扣分。
 
-标题有获得感但不可夸张；summary用2句话说明发生了什么、为什么现在重要；reader_gain总结认知收获；career_signal明确对求职、技能或岗位的启示，没有就写“暂无直接信号”；startup_signal明确客户、痛点或商业机会，没有就写“暂无直接信号”；action给出读者一周内可完成的具体动作。weekly_take写本周最重要的一条产业判断。候选：${JSON.stringify(fresh).slice(0,120000)}`;
-const response=await fetch("https://api.deepseek.com/responses",{method:"POST",headers:{authorization:`Bearer ${apiKey}`,"content-type":"application/json"},body:JSON.stringify({model,input:prompt,max_output_tokens:12000,text:{format:{type:"json_schema",name:"weekly_digest",schema}}})});if(!response.ok)throw new Error(`DeepSeek: ${response.status} ${await response.text()}`);const raw=await response.json();const text=raw.output?.flatMap(x=>x.content||[]).find(x=>x.type==="output_text")?.text;if(!text)throw new Error("DeepSeek 未返回结构化结果");const digest=JSON.parse(text);await fs.writeFile("docs/data/latest.json",JSON.stringify(digest,null,2)+"\n");archive.push(...digest.articles.map(x=>({url:x.url,title:x.title,published_at:new Date().toISOString()})));await fs.writeFile("data/archive.json",JSON.stringify(archive.slice(-1000),null,2)+"\n");
+标题有获得感但不可夸张；summary用2句话说明发生了什么、为什么现在重要；reader_gain总结认知收获；career_signal明确对求职、技能或岗位的启示，没有就写“暂无直接信号”；startup_signal明确客户、痛点或商业机会，没有就写“暂无直接信号”；action给出读者一周内可完成的具体动作。weekly_take写本周最重要的一条产业判断。url和source必须逐字使用候选里的值，不能编造。候选：${JSON.stringify(balanced).slice(0,120000)}`;
+const response=await fetch("https://api.deepseek.com/responses",{method:"POST",headers:{authorization:`Bearer ${apiKey}`,"content-type":"application/json"},body:JSON.stringify({model,input:prompt,max_output_tokens:12000,text:{format:{type:"json_schema",name:"weekly_digest",schema}}})});if(!response.ok)throw new Error(`DeepSeek: ${response.status} ${await response.text()}`);const raw=await response.json();const text=raw.output?.flatMap(x=>x.content||[]).find(x=>x.type==="output_text")?.text;if(!text)throw new Error("DeepSeek 未返回结构化结果");const digest=JSON.parse(text);
+const lookup=new Map(balanced.map(x=>[x.url,x]));const perSource=new Map();let papers=0;const articles=[];
+for(const a of digest.articles){const original=lookup.get(a.url);if(!original||policyWords.test(`${original.title} ${a.title} ${a.summary}`))continue;const count=perSource.get(original.source)||0;if(count>=2||original.type==="论文"&&papers>=2)continue;perSource.set(original.source,count+1);if(original.type==="论文")papers++;articles.push({...a,source:original.source,url:original.url});if(articles.length===10)break}
+if(!articles.length)throw new Error("AI 返回内容未通过来源与政策校验，本期不发布");
+digest.articles=articles;console.log(`最终入选 ${articles.length} 篇，来源：${[...perSource].map(([s,n])=>`${s} ${n}`).join("、")}`);
+await fs.writeFile("docs/data/latest.json",JSON.stringify(digest,null,2)+"\n");archive.push(...articles.map(x=>({url:x.url,title:x.title,published_at:new Date().toISOString()})));await fs.writeFile("data/archive.json",JSON.stringify(archive.slice(-1000),null,2)+"\n");
