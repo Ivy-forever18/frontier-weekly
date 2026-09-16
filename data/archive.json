@@ -98,5 +98,50 @@
     "url": "https://openai.com/index/ai-policy-window",
     "title": "AI 政策窗口正在打开，Chris Lehane 呼吁尽快行动",
     "published_at": "2026-09-14T05:33:13.012Z"
+  },
+  {
+    "url": "https://openai.com/index/fyxer",
+    "title": "Fyxer 如何做出一个「用户愿意信」的 AI 行政助理",
+    "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
+    "title": "Meta 把 AI 塞进订阅：Meta One 想让你为社交付费",
+    "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
+    "title": "AEO 公司 Profound 7 个月再融 1.8 亿美元，估值冲到 18 亿",
+    "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+    "title": "买前沿模型只换来约 4 个月领先，成本却高约 5 倍",
+    "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale/",
+    "title": "Abnormal AI 用 AgentCore 沙箱扛住十亿级邮件风控",
+    "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://github.com/youngyangyang04/llm-master",
+    "title": "llm-master：中文 LLM 全栈学习路线，532 星",
+    "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
+    "title": "Skild AI 的 S1：给机器人看一段视频就能学会新任务",
+    "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.17475v1",
+    "title": "JustFit：24 GiB 笔记本上跑 200K 上下文的 LLM 服务",
+    "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.17464v1",
+    "title": "拆得越多，找回的越少：多智能体分解的产出上限",
+    "published_at": "2026-09-16T08:15:00.611Z"
   }
 ]
