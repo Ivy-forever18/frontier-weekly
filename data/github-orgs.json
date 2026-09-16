@@ -7,6 +7,6 @@
   {"company":"腾讯","org":"Tencent","min_stars":100,"enabled":true},
   {"company":"京东","org":"jd-opensource","min_stars":30,"enabled":true},
   {"company":"美团","org":"meituan","min_stars":50,"enabled":true},
-  {"company":"快手","org":"KwaiVGI","min_stars":30,"enabled":true},
+  {"company":"快手","org":"KwaiVideoTeam","min_stars":30,"enabled":true},
   {"company":"小红书","org":"rednote-hilab","min_stars":30,"enabled":true}
 ]
