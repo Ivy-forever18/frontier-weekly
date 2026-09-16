@@ -6,11 +6,16 @@ on:
 permissions:
   contents: write
   issues: read
+concurrency:
+  group: weekly-curation
+  cancel-in-progress: false
 jobs:
   curate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v5
         with:
           node-version: 22
@@ -25,5 +30,16 @@ jobs:
           git config user.name "frontier-weekly-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/latest.json data/archive.json
-          git diff --cached --quiet || git commit -m "更新本周精选"
-          git push
+          if git diff --cached --quiet; then
+            echo "本周内容没有变化，无需提交"
+            exit 0
+          fi
+          git commit -m "更新本周精选"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true
+            echo "远端发生变化，等待后进行第 $((attempt + 1)) 次尝试"
+            sleep $((attempt * 3))
+          done
+          echo "连续三次同步失败，请检查是否有文件冲突"
+          exit 1
