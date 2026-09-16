@@ -1,0 +1,7 @@
+[
+  {"company":"字节跳动","name":"字节跳动开源","url":"https://opensource.bytedance.com/","type":"企业实践","enabled":true},
+  {"company":"火山引擎","name":"火山引擎开发者社区","url":"https://developer.volcengine.com/user/2772312065061673","type":"企业实践","enabled":true},
+  {"company":"阿里云","name":"Spring Cloud Alibaba","url":"https://sca.aliyun.com/blog/","type":"工程","enabled":true},
+  {"company":"腾讯","name":"腾讯 CloudBase","url":"https://cloudbase.cloud.tencent.com/blog","type":"产品","enabled":true},
+  {"company":"美团","name":"美团技术团队","url":"https://tech.meituan.com/","type":"企业实践","enabled":true}
+]
