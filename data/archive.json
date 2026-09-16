@@ -143,5 +143,55 @@
     "url": "https://arxiv.org/abs/2609.17464v1",
     "title": "拆得越多，找回的越少：多智能体分解的产出上限",
     "published_at": "2026-09-16T08:15:00.611Z"
+  },
+  {
+    "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+    "title": "Devin 用 Astra 自测代码：AI 编程进入“自证”阶段",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
+    "title": "WhatsApp 商业开通用上编码代理：MCP 把配置活外包给 AI",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+    "title": "给 AI 代理上保险：AIUC 融资 4000 万美元",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/",
+    "title": "本地代理上 PC：Perplexity 把代理搬进 Windows 与 RTX",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://github.com/Tencent/BrowserSkill",
+    "title": "腾讯开源 BrowserSkill：让代理用你已登录的浏览器",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://github.com/volcengine/OpenViking",
+    "title": "OpenViking：把代理记忆、RAG 与技能装进一个上下文库",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://tech.meituan.com/2026/09/10/Agent-Evaluation-White-Paper-01.html",
+    "title": "美团开写 Agent 评测白皮书：评测正变成一门工种",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://github.com/xiaYuTian11/maskit",
+    "title": "本地脱敏网关 Maskit：让编码代理用上数据又不外传",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.17527v1",
+    "title": "论文：多代理社会缺的不是模型，而是“社会安全带”",
+    "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/",
+    "title": "银行接入从数周到数分钟：Ninth Wave 的多代理落地",
+    "published_at": "2026-09-16T10:30:16.802Z"
   }
 ]
