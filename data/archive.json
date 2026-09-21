@@ -193,5 +193,55 @@
     "url": "https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/",
     "title": "银行接入从数周到数分钟：Ninth Wave 的多代理落地",
     "published_at": "2026-09-16T10:30:16.802Z"
+  },
+  {
+    "url": "https://openai.com/index/astra-for-law",
+    "title": "OpenAI推出法律版Astra：把前沿模型做成律所工作流",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/",
+    "title": "Bedrock AgentCore新runtime：会话释放即回收内存，冷启动稳定",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services/",
+    "title": "德国保险经纪MRH Trowe：400名员工首月用上自助AI Agent",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
+    "title": "a16z押注Vals：AI评测想成为可付费的行业基础设施",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/",
+    "title": "Agility新机器人会主动蹲下避让：人机共处不再只靠围栏",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://github.com/bytedance/deer-flow",
+    "title": "字节开源deer-flow：能跑几小时的超长任务Agent框架",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://github.com/Tencent/AI-Infra-Guard",
+    "title": "腾讯开源AI-Infra-Guard：给Agent、MCP和模型做红队扫描",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://github.com/alibaba/loongsuite-pilot",
+    "title": "阿里开源loongsuite-pilot：给AI编码代理装上用量与成本仪表",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.22067v1",
+    "title": "7万条帖子告诉你：用户把任务交给Agent时最在意什么",
+    "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.21967v1",
+    "title": "开源全双工语音模型VoiceChat：边听边说还能调工具",
+    "published_at": "2026-09-21T05:38:28.713Z"
   }
 ]
