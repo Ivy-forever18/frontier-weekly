@@ -243,5 +243,55 @@
     "url": "https://arxiv.org/abs/2609.21967v1",
     "title": "开源全双工语音模型VoiceChat：边听边说还能调工具",
     "published_at": "2026-09-21T05:38:28.713Z"
+  },
+  {
+    "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+    "title": "ChatGPT 广告扩至东南亚与台湾：对话式广告开始规模变现",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+    "title": "谷歌在印度测试用 Gemini 直接下单 Flipkart 商品",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+    "title": "Anthropic 七年付 Akamai 116 亿美元，算力采购押注 CPU",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/09/meta-puts-its-ai-assistant-on-a-keychain/",
+    "title": "Meta 把 AI 助手做成钥匙扣，12 月出货",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
+    "title": "AI 冲击应届生就业？目前数据并不支持",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://github.com/Tencent/WeKnora",
+    "title": "腾讯开源 WeKnora：文档变可查询 RAG 与自维护 Wiki",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://github.com/alibaba/open-code-review",
+    "title": "阿里开源代码审查工具：规则流水线加 LLM Agent",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://github.com/jev-chat/jev-chat-jarvis",
+    "title": "只读屏幕的对话副驾：在聊天软件里给候选回复",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.31587v1",
+    "title": "给编码 Agent 写文档：完整性比长度更决定成败",
+    "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.31540v1",
+    "title": "哪些任务能丢给本地小模型？用“可检查性”判断",
+    "published_at": "2026-09-28T06:05:30.590Z"
   }
 ]
