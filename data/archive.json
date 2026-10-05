@@ -293,5 +293,55 @@
     "url": "https://arxiv.org/abs/2609.31540v1",
     "title": "哪些任务能丢给本地小模型？用“可检查性”判断",
     "published_at": "2026-09-28T06:05:30.590Z"
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "title": "GPT-6.1 Sol 发布：接近 Astra 的能力，价格只要五分之一",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://openai.com/index/chatham-financial",
+    "title": "Chatham 用 Codex 把交易验证从30分钟压到4分钟",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+    "title": "Apple 收紧 macOS 全盘访问：AI Agent 的桌面权限红利结束",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+    "title": "DGX Spark 上 64GB 统一内存：本地跑 Agent 的门槛又降了",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/",
+    "title": "AWS 用多 Agent 把云迁移的 IaC 编写从数周压到数分钟",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://github.com/bytedance/flowgram.ai",
+    "title": "字节开源 FlowGram：AI 工作流平台的画布层可直接复用",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect/",
+    "title": "AI 原生团队怎么干活：TensorRT Model Connect 的工程经验",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+    "title": "Google 冻结开源漏洞赏金：AI 生成报告把审核淹了",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.03693v1",
+    "title": "只靠病理切片预测乳腺癌新辅助治疗反应，少标注也能做",
+    "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.03651v1",
+    "title": "MRVQ：一套索引同时支持多维度多码率，向量检索更省",
+    "published_at": "2026-10-05T06:24:38.280Z"
   }
 ]
