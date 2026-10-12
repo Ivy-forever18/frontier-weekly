@@ -343,5 +343,55 @@
     "url": "https://arxiv.org/abs/2610.03651v1",
     "title": "MRVQ：一套索引同时支持多维度多码率，向量检索更省",
     "published_at": "2026-10-05T06:24:38.280Z"
+  },
+  {
+    "url": "https://openai.com/index/gpt-6-for-everyone",
+    "title": "GPT-6 上线智能 UI：模型竞争转向交互形态",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+    "title": "Claude Haiku 5.5 上架 AWS：子代理成本降约七成",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+    "title": "非文本模型 Jev 上线数周估值 75 亿美元",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+    "title": "Mistral 新模型开放权重，宣称对标顶尖闭源",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://github.com/QwenLM/qwen-code",
+    "title": "qwen-code：终端里的开源编码代理，星标破 2.8 万",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+    "title": "代理自己付钱：按次推理结算已经跑通",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "title": "编码代理写更多代码，却没交付更多软件",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://openai.com/index/radisson",
+    "title": "Radisson 把酒店预订搬进 ChatGPT",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.13823v1",
+    "title": "温度设 0 也不稳定：语义查询结果会漂移",
+    "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.13886v1",
+    "title": "跨服务红队：个人代理的组合式失败怎么提前发现",
+    "published_at": "2026-10-12T06:44:29.057Z"
   }
 ]
