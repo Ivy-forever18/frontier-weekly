@@ -393,5 +393,55 @@
     "url": "https://arxiv.org/abs/2610.13886v1",
     "title": "跨服务红队：个人代理的组合式失败怎么提前发现",
     "published_at": "2026-10-12T06:44:29.057Z"
+  },
+  {
+    "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "title": "Stack Overflow for Agents靠ChatGPT插件把注册量翻三倍",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+    "title": "Higgsfield把AI视频从1分钟拉到10分钟以上",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+    "title": "迪士尼接手Character.AI多数员工，AI角色团队被并购式收编",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
+    "title": "RTX Spark笔记本开卖：本地AI工作站进入2400美元档",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/",
+    "title": "ShipStation用AgentCore做IT Help Desk，三个月解决97.5%查询",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
+    "title": "NVIDIA把Run:ai开源，AI工厂调度层开始开放",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+    "title": "Anthropic员工更资深、会议更多：AI公司岗位结构在变",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/building-agents-that-transact-with-anchor-browser-and-agentcore-payments/",
+    "title": "Agent开始自己付钱：x402资源与AgentCore支付落地",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.23826v1",
+    "title": "自建实验室：让AI Agent改造自动化实验流程",
+    "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.23791v1",
+    "title": "DrugHarness：可进化的药物发现Agent工具架",
+    "published_at": "2026-10-19T05:28:13.055Z"
   }
 ]
