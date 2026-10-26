@@ -443,5 +443,55 @@
     "url": "https://arxiv.org/abs/2610.23791v1",
     "title": "DrugHarness：可进化的药物发现Agent工具架",
     "published_at": "2026-10-19T05:28:13.055Z"
+  },
+  {
+    "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+    "title": "AWS Continuum for code vulnerabilities is now generally available",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+    "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
+    "title": "The $15 billion ad-powered AI startup your doctor may already be using",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://openai.com/index/forward-deployed-engineering-means",
+    "title": "What FDE means at OpenAI",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+    "title": "How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://github.com/alibaba/skill-up",
+    "title": "阿里巴巴开源 · skill-up",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+    "title": "Block’s new voice model sounds eerily human",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://tech.meituan.com/2026/10/22/LOOP-AutoResearch.html",
+    "title": "从 LOOP 到图探索 —— 算法模型的 AutoResearch 自进化系统架构演进之路",
+    "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.32969v1",
+    "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+    "published_at": "2026-10-26T05:34:07.594Z"
   }
 ]
