@@ -493,5 +493,55 @@
     "url": "https://arxiv.org/abs/2610.32969v1",
     "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
     "published_at": "2026-10-26T05:34:07.594Z"
+  },
+  {
+    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+    "title": "OpenAI 与 ServiceNow 打通企业工单，agent 直接进入业务流程",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/",
+    "title": "AI 搜索更贵却更不赚钱，Google 用广告填补缺口",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+    "title": "AI 拉动脉络带复产，富士胶片把磁带产能提高 5 倍",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+    "title": "Anthropic 上市在即，却被预期拿到高收益垃圾级评级",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+    "title": "货代用多 agent 处理异常账单，释放千万美元现金",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/",
+    "title": "把 400 个内部 API 变成 agent 工具，而不是 400 个服务",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://tech.meituan.com/2026/10/29/AI-Coding-IN-Distributed-Storage-System.html",
+    "title": "美团在不能出错的存储系统里，给 AI Coding 划出边界",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+    "title": "在短信里投票选餐厅并订位：AI 管家切入群聊决策",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://github.com/alibaba/zvec",
+    "title": "阿里开源的进程内向量库，直指 agent 的检索开销",
+    "published_at": "2026-11-02T06:58:52.718Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.42147v1",
+    "title": "超长上下文注意力再降复杂度，长任务 agent 成本或被压低",
+    "published_at": "2026-11-02T06:58:52.718Z"
   }
 ]
