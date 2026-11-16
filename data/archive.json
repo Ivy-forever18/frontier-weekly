@@ -588,5 +588,55 @@
     "url": "https://github.com/bytedance/vArmor",
     "title": "Agent 有了权限，就得先有沙箱",
     "published_at": "2026-11-09T07:24:33.630Z"
+  },
+  {
+    "url": "https://openai.com/index/introducing-chatgpt-wallet",
+    "title": "ChatGPT 上线钱包：agent 开始替用户花钱",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/",
+    "title": "395 美元起，Gemini 智能眼镜把隐私提示当卖点",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+    "title": "LangChain 估值 30 亿美元，卖的是 agent 的可靠性",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+    "title": "印度芯片新公司拿下 2400 万美元种子轮，AI 传感器先有订单",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://github.com/alibaba/page-agent",
+    "title": "页面 agent 拿到近 3 万星：没 API 的旧系统也能自动化",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/",
+    "title": "实验室运营 agent：首次响应快 130 倍，96.2% 工单自动覆盖",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+    "title": "AWS 出了本地模拟器，云上开发的内循环搬回本机",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
+    "title": "用 AI 修了一个 bug，独立游戏团队被取消评审资格",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+    "title": "分拣垃圾的视觉 AI：付费意愿来自可计量的物料收益",
+    "published_at": "2026-11-16T07:27:33.394Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.18514v1",
+    "title": "网页 agent 为什么会点错按钮：用机制可解释性做失败归因",
+    "published_at": "2026-11-16T07:27:33.394Z"
   }
 ]
